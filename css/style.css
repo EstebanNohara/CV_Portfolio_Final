@@ -10,16 +10,43 @@ body {
     background-image: url("/img/background_image_4.jpg");
     color: white;
 }
+
 a {
     color: white;
     font-weight: 600;
 }
-a:focus, a:hover{
+
+a:focus,
+a:hover {
     color: lightseagreen;
 }
+
 img {
     width: 100%;
 }
+
+/*Botonera*/
+.boton {
+    opacity: 0.5;
+    display: inline-block;
+    padding: 1em;
+    text-decoration: none;
+    background-image: linear-gradient(#07F6F9, #07F6F9), linear-gradient(#2D2D2D, #2D2D2D);
+    background-size: 0 5px, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all .2s ease-out;
+}
+
+.boton-activado {
+    color: #07F6F9;
+}
+
+.boton:hover {
+    opacity: 1;
+    background-size: 100% 3px, auto;
+}
+
 /*header*/
 header {
     display: flex;
@@ -48,7 +75,8 @@ header {
     font-weight: 300;
     text-decoration: none;
 }
-.navBar a:hover{
+
+.navBar a:hover {
     color: lightseagreen;
 }
 
@@ -98,12 +126,15 @@ footer {
     grid-template-columns: auto auto auto;
     column-gap: 10px;
 }
-#works.mainindex{
+
+#works.mainindex {
     padding: 100px;
 }
+
 #works h1 {
     margin-bottom: 50px;
 }
+
 .work {
     margin: 2% 1em;
 }
@@ -126,7 +157,20 @@ form {
     justify-content: space-evenly;
     width: 30%;
     height: 60%;
+    font-size: larger;
+    margin-top: 10px;
 }
+
+form label {
+    margin-top: 10px;
+}
+
+form input {
+    margin-top: 10px;
+    font-size: medium;
+}
+
+/* About */
 
 .mainabout {
     display: flex;
@@ -189,7 +233,7 @@ form {
 
 /* Query Tablet */
 @media screen and (min-width:800px) and (max-width:1200px) {
-    .grid-container{
+    .grid-container {
         padding: 0px;
     }
 
@@ -212,6 +256,7 @@ form {
         flex-direction: column;
         justify-content: center;
     }
+
     footer p {
         margin-bottom: 16px;
         text-align: center;
@@ -221,7 +266,7 @@ form {
         margin-bottom: 16px;
         text-align: center;
     }
-    
+
     .footer-container {
         flex-direction: column;
         margin-bottom: 16px;
@@ -234,14 +279,16 @@ form {
         grid-template-columns: auto;
         row-gap: 32px;
     }
-    #works.mainindex{
+
+    #works.mainindex {
         padding: 100px;
     }
+
     #works h1 {
         font-size: 48px;
         margin-bottom: 32px;
     }
-      
+
 }
 
 
@@ -254,13 +301,16 @@ form {
         background-color: #333;
         margin: 0;
     }
-    .navBar{
+
+    .navBar {
         height: auto;
     }
-    .navBar ul{
+
+    .navBar ul {
         flex-direction: column;
     }
-    .grid-container{
+
+    .grid-container {
         padding: 0px;
     }
 
@@ -269,14 +319,16 @@ form {
         padding: 32px 24px;
         width: 100vw;
     }
-    .title{
+
+    .title {
         display: flex;
         flex-wrap: wrap;
         width: 100vw;
         margin-bottom: 24px;
         flex-direction: column;
     }
-    .title h1{
+
+    .title h1 {
         font-size: 48px;
     }
 
@@ -285,6 +337,7 @@ form {
         flex-direction: column;
         justify-content: center;
     }
+
     footer p {
         margin-bottom: 16px;
         text-align: center;
@@ -294,25 +347,44 @@ form {
         margin-bottom: 16px;
         text-align: center;
     }
-    
+
     .footer-container {
         flex-direction: column;
         margin-bottom: 16px;
         justify-content: center;
     }
+
     /*works*/
     .workgallery {
         display: grid;
         grid-template-columns: auto;
         row-gap: 32px;
     }
-    #works.mainindex{
+
+    #works.mainindex {
         padding: 32px;
     }
+
     #works h1 {
         font-size: 48px;
         margin-bottom: 32px;
     }
-        
-        
+
+
+}
+
+
+
+/* Animaciones */
+
+.delay1 {
+    animation-delay: 0.25s;
+}
+
+.delay2 {
+    animation-delay: 0.5s;
+}
+
+.delay3 {
+    animation-delay: 0.7s;
 }

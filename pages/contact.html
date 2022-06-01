@@ -1,69 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <title>Contacto</title>
-  </head>
 
-  <body class="background">
-    <header>
-      <nav id="top" class="navBar">
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="./work.html">Trabajos</a></li>
-          <li><a href="./skills.html">Habilidades</a></li>
-          <li><a href="./about.html">Sobre mi</a></li>
-          <li><a href="./contact.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Contacto</title>
+</head>
 
-    <div class="mainindex"><h1>Contacto</h1></div>
+<body class="background grid-container">
+  <header class="grid-item row">
+    <nav id="top" class="navBar">
+      <ul>
+        <li class="boton"><a href="../index.html">Home</a></li>
+        <li class="boton"><a href="work.html">Trabajos</a></li>
+        <li class="boton"><a href="skills.html">Habilidades</a></li>
+        <li class="boton"><a href="about.html">Sobre mi</a></li>
+        <li class="boton-activado"><a href="contact.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main class="maincontact">
-      <form>
-        <select name="Tipo de Contacto">
-          <option value="Request">Solicitud de servicio</option>
-          <option value="Inquiry">Consulta</option>
-        </select>
-        <label for="fname">Nombre:</label>
-        <input type="text" id="fname" name="fname" placeholder="Nombre" />
-        <label for="lname">Apellido:</label>
-        <input type="text" id="lname" name="lname" placeholder="Apellido" />
-        <label for="email">Correo Electronico:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="nombre@dominio.com"
-        />
+  <main class="mainindex grid-item column">
+    <div class="title animate__animated animate__fadeInLeft delay3">
+      <h1>Contacto</h1>
+    </div>
+    <form class="animate__animated animate__fadeInLeft delay2">
+      <select name="Tipo de Contacto">
+        <option value="Request">Solicitud de servicio</option>
+        <option value="Inquiry">Consulta</option>
+      </select>
+      <label for="fname">Nombre:</label>
+      <input type="text" id="fname" name="fname" placeholder="Nombre" />
+      <label for="lname">Apellido:</label>
+      <input type="text" id="lname" name="lname" placeholder="Apellido" />
+      <label for="email">Correo Electronico:</label>
+      <input type="email" id="email" name="email" placeholder="nombre@dominio.com" />
 
-        <textarea
-          name="Mensaje:"
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Escriba aqui..."
-        ></textarea>
+      <textarea name="Mensaje:" id="" cols="30" rows="10" placeholder="Escriba aqui..."></textarea>
 
-        <input type="submit" value="Submit" />
-      </form>
-    </main>
+      <input type="submit" value="Submit" />
+    </form>
+  </main>
 
-    <footer>
-      <div>
-        <section>
-          <p>
-            Página personal 2022. Coderhouse. Todos los derechos reservados.
-            Realizado con muchas lagrimas por Esteban Nohara
-          </p>
-          <p><a href="#arriba">Español</a> - <a href="#arriba">Ingles</a></p>
-        </section>
-        <a href="#arriba">Ir arriba</a>
-      </div>
-    </footer>
-  </body>
+  <footer class="grid-item">
+    <section class="footer-container">
+      <p>Página personal 2022. Coderhouse. Todos los derechos reservados.
+        Realizado con muchas lagrimas por Esteban Nohara</p>
+      <p><a href="#arriba">Español</a> - <a href="#arriba">Ingles</a></p>
+    </section>
+    <a href="#arriba">Ir arriba</a>
+  </footer>
+</body>
+
 </html>
