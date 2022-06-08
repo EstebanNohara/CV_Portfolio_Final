@@ -54,6 +54,11 @@ header {
     margin-top: 30px;
     border-top: 1px solid white;
     justify-content: flex-end;
+    height: 80px;
+    z-index: 99;
+}
+header.grid-item{
+    height: 80px;
 }
 
 .navBar {
@@ -84,13 +89,19 @@ header {
     padding: 12px 24px;
 
 }
-
+.hamburguer-btn{
+    display: none;
+}
+.content{
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
 /* Main */
 .mainindex {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 200px 800px 200px 100px;
+    padding: 50px 200px;
 }
 
 h3 {
@@ -114,7 +125,10 @@ footer {
     justify-content: space-between;
     border-top: 1px solid white;
 }
-
+footer.grid-item{
+    height: 60px;
+    margin-bottom: 20px;
+}
 .footer-container {
     display: flex;
     flex-direction: column;
@@ -172,12 +186,32 @@ form input {
 
 /* About */
 
-.mainabout {
+.main-about {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-left: 15%;
-    padding-bottom: 5%;
+
+}
+
+.aboutgallery {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+}
+
+.about-column {
+    padding-bottom: 1%;
+}
+.title-container{
+    display: flex;
+    align-items: center;
+}
+.aboutgallery2{
+    margin-left: 32px;
+}
+.aboutgallery2 .fa-solid{
+    font-size: 32px;
+    width: 50px;
 }
 
 /* Skills */
@@ -198,6 +232,8 @@ form input {
         'main'
         'footer';
     padding: 0 100px;
+    min-height: 100vh;
+    align-content: space-between;
 }
 
 .grid-item {
@@ -289,6 +325,17 @@ form input {
         margin-bottom: 32px;
     }
 
+    /* About */
+    .grid-item {
+        height: auto;
+        display: flex;
+    }
+
+    .row {
+        flex-direction: column;
+
+    }
+
 }
 
 
@@ -301,13 +348,39 @@ form input {
         background-color: #333;
         margin: 0;
     }
-
+    header.grid-item{
+        height: auto;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .nav-container{
+        align-items: flex-start;
+        align-content: center;
+    }
     .navBar {
         height: auto;
+        width: 100%;
+        background-color: #2D2D2D;
+        align-items: center;
+        align-content: center;
     }
 
     .navBar ul {
         flex-direction: column;
+    }
+    .hamburguer-btn{
+        display: block;
+        height: 50px;
+        width: 50px;
+        font-size: 25px;
+        background-color: #1d1d1d;
+        color: white;
+        border-radius: 5px;
+        border-color: #000;
+    }
+    .content{
+        max-height: 0px;
     }
 
     .grid-container {
@@ -323,7 +396,6 @@ form input {
     .title {
         display: flex;
         flex-wrap: wrap;
-        width: 100vw;
         margin-bottom: 24px;
         flex-direction: column;
     }
@@ -347,7 +419,9 @@ form input {
         margin-bottom: 16px;
         text-align: center;
     }
-
+    footer.grid-item{
+        height: auto;
+    }
     .footer-container {
         flex-direction: column;
         margin-bottom: 16px;
@@ -370,6 +444,42 @@ form input {
         margin-bottom: 32px;
     }
 
+    /* About */
+    .grid-item {
+        height: auto;
+        display: flex;
+    }
+
+    .title-container{
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        align-items: flex-start;
+        margin-top: 250px;
+        padding: 0px 12px;
+    }
+    .aboutgallery2{
+        padding:0;
+        align-self: flex-start;
+        padding: 15px 0px;
+        margin: 0;
+    }
+
+    .main-about .parrafo{
+        margin: 15px 0px;
+    }
+    .social-container{
+        margin: 20px 0px;
+    }
+    .work{
+        padding: 20px 0px;
+    }
+    .experience-list{
+        margin: 15px 0px;
+    }
+    .experience-list li {
+        margin: 12px 0px;
+    }
 
 }
 

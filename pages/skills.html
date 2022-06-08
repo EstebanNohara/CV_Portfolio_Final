@@ -5,23 +5,31 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--icons-->
+  <script src="https://kit.fontawesome.com/265b3b40f6.js" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <title>Habilidades</title>
 </head>
 
 <body class="background grid-container">
-  <header class="grid-item row">
-    <nav id="top" class="navBar">
+  <header class="grid-item row nav-container">
+    <button class="hamburguer-btn collapsible">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <nav id="top" class="navBar content">
       <ul>
         <li class="boton"><a href="../index.html">Home</a></li>
         <li class="boton"><a href="work.html">Trabajos</a></li>
-        <li class="boton-activado"><a href="skills.html">Habilidades</a></li>
-        <li class="boton"><a href="about.html">Sobre mi</a></li>
+        <li class="boton"><a href="skills.html">Habilidades</a></li>
+        <li class="boton-activado"><a href="about.html">Sobre mi</a></li>
         <li class="boton"><a href="contact.html">Contacto</a></li>
       </ul>
     </nav>
   </header>
+
 
   <main id="works" class="mainindex grid-item column">
     <h1 class="title animate__animated animate__fadeInLeft delay3">Habilidades</h1>
@@ -68,6 +76,24 @@
     </section>
     <a href="#arriba">Ir arriba</a>
   </footer>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = 250 + "px";
+        } 
+      });
+    }
+    </script>
+
 </body>
 
 </html>

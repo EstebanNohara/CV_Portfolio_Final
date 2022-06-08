@@ -5,14 +5,22 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--icons-->
+  <script src="https://kit.fontawesome.com/265b3b40f6.js" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  
   <title>Sobre mi</title>
 </head>
 
 <body class="background grid-container">
-  <header class="grid-item row">
-    <nav id="top" class="navBar">
+  <header class="grid-item row nav-container">
+    <button class="hamburguer-btn collapsible">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <nav id="top" class="navBar content">
       <ul>
         <li class="boton"><a href="../index.html">Home</a></li>
         <li class="boton"><a href="work.html">Trabajos</a></li>
@@ -23,57 +31,86 @@
     </nav>
   </header>
 
-  <main class="mainindex grid-item column">
-    <h1>Sobre mi</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
-      voluptate dignissimos fugit illo impedit, sapiente porro odio hic sed
-      molestiae omnis alias debitis, cum vitae? Harum explicabo veniam
-      inventore porro earum deserunt, omnis praesentium voluptatem doloremque
-      odio magnam aliquid placeat rerum iure repellat minima optio libero
-      ullam magni veritatis nam totam numquam! Eum asperiores beatae voluptate
-    </p>
+  <main class="main-about grid-item column">
+    <div class="grid-item row title-container">
+      <h1 class="title ">Esteban Nohara</h1>
+      <div class="grid-item aboutgallery2">
+        <i class="fa-solid fa-guitar"></i>
+        <i class="fa-solid fa-keyboard"></i>
+        <i class="fa-solid fa-computer-mouse"></i>
+        <i class="fa-solid fa-torii-gate"></i>
+        <i class="fa-solid fa-mug-hot"></i>
+        <i class="fa-solid fa-motorcycle"></i>
+        <i class="fa-solid fa-gamepad"></i>
+      </div>
+    </div>
+
+    <p class="parrafo">De pequeño, mientras todos querían ser héroes de primera
+      plana (doctores, abogados o policías) para salvar al mundo, yo quería ser espía, un rol más secundario pero a la
+      vez esencial. Pero todos me decían que eso no era posible, uno no puede elegir ser espía ya que eso no existía
+      más. Al pasar los años, me formé en Diseño Industrial, el cual su rol principal es identificar necesidades no
+      satisfechas de los usuarios o problemáticas actuales y resolverlas.</p>
+    <p class="parrafo">Pero ese deseo no se apago y ante una actualidad en la que
+      nos vemos invadidos de interfaces digitales deficientes opte por ser Diseñador UX/UI y salvar a los usuarios de
+      aplicaciones poco amigables.</p>
+    <br>
+    <div class="social-container">
+      <div class="">
+        <a href="https://www.behance.net/EstebanNohara">
+          <h3>Portfolio Online</h3>
+        </a>
+        <br>
+        <a href="https://www.linkedin.com/in/estebannohara/">
+          <h3>Linkedin</h3>
+        </a>
+      </div>
+  
+      <section class="mainabout grid-item column">
+        <div class="aboutgallery">
+          <div>
+            <section class="work">
+              <h3>Historial Academico</h3>
+              <ul class="experience-list">
+                <li>Diseño UX/UI (básico) | Coderhouse 2021</li>
+                <li>Diseño UX/UI (avanzado) | Coderhouse 2021</li>
+                <li>Diseño Industrial | UADE 2019</li>
+              </ul>
+            </section>
+  
+            <section class="work">
+              <h3>Cursos</h3>
+              <ul class="experience-list">
+                <li>Design Thinking - Bronce Badge (EY! 2021)</li>
+                <li>Business Model Innovation (Udemy 2021)</li>
+                <li>
+                  Creativity, Design Thinking and Innovation for Business (Udemy 2021)
+                </li>
+                <li>Solid Works (FADU UBA 2015)</li>
+              </ul>
+            </section>
+          </div>
+  
+          <section class="work">
+            <h3>Historial Laboral</h3>
+            <ul class="experience-list">
+              <li>Diseñador UX/UI (Freelance) Sep 2021 - Actualidad</li>
+              <li>Administrador IAM (EY!) Ago 2020 - Ene 2022</li>
+              <li>Diseñador Industrial (CentroEstant) Feb 2016 - Ene 2022</li>
+              <li>ProyectistaCAD (SMC) Feb 2015 - Ago 2015</li>
+              <li>Microinformática (UniversidadAustral) Jul 2014 - Feb 2015</li>
+              <li>Soporte OnSite (DLA) May 2014 - Jul 2015</li>
+              <li>Soporte Técnico (Coop. Telviso) Dic 2012 - Feb 2014</li>
+              <li>Soporte Bilingue (Ecnex) Sep 2010 - Dic 2012</li>
+            </ul>
+          </section>
+        </div>
+      </section>
+  
+    </div>
   </main>
   </header>
 
-  <main id="works" class="mainindex grid-item column">
-    <div class="workgallery">
 
-      <section class="work">
-        <h3>Historial Academico</h3>
-        <ul>
-          <li>Diseño UX/UI (básico) | Coderhouse 2021</li>
-          <li>Diseño UX/UI (avanzado) | Coderhouse 2021</li>
-          <li>Diseño Industrial | UADE 2019</li>
-        </ul>
-      </section>
-
-      <section class="work">
-        <h3>Cursos</h3>
-        <ul>
-          <li>Design Thinking - Bronce Badge (EY! 2021)</li>
-          <li>Business Model Innovation (Udemy 2021)</li>
-          <li>
-            Creativity, Design Thinking and Innovation for Business (Udemy 2021)
-          </li>
-          <li>Solid Works (FADU UBA 2015)</li>
-        </ul>
-      </section>
-
-      <section class="work">
-        <h3>Historial Laboral</h3>
-        <ul>
-          <li>Diseñador UX/UI (Freelance) Sep 2021 - Actualidad</li>
-          <li>Administrador IAM (EY!) Ago 2020 - Ene 2022</li>
-          <li>Diseñador Industrial (CentroEstant) Feb 2016 - Ene 2022</li>
-          <li>ProyectistaCAD (SMC) Feb 2015 - Ago 2015</li>
-          <li>Microinformática (UniversidadAustral) Jul 2014 - Feb 2015</li>
-          <li>Soporte OnSite (DLA) May 2014 - Jul 2015</li>
-          <li>Soporte Técnico (Coop. Telviso) Dic 2012 - Feb 2014</li>
-          <li>Soporte Bilingue (Ecnex) Sep 2010 - Dic 2012</li>
-        </ul>
-      </section>
-    </div>
-  </main>
 
   <footer class="grid-item">
     <section class="footer-container">
@@ -83,6 +120,23 @@
     </section>
     <a href="#arriba">Ir arriba</a>
   </footer>
-</body>
 
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = 250 + "px";
+        } 
+      });
+    }
+    </script>
+
+</body>
 </html>
