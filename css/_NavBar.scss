@@ -1,0 +1,21 @@
+.navBar {
+	height: 5vh;
+	display: flex;
+	ul {
+		margin-top: 10px;
+		display: flex;
+		list-style: none;
+		justify-content: space-evenly;
+		li {
+			padding: 12px 24px;
+		}
+	}
+	a {
+		color: $color_white;
+		font-weight: 300;
+		text-decoration: none;
+		&:hover {
+			color: $color_cyan;
+		}
+	}
+}
