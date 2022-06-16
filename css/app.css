@@ -1,3 +1,20 @@
+/* SASS II (Extend) */
+.textoh3, .test-sass {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: violet;
+}
+
+.test-sass {
+  text-decoration: line-through;
+}
+
+/* Mixin */
+.cuerpo {
+  background-color: aliceblue;
+  font-size: larger;
+  color: aquamarine;
+}
+
 /* SCSS - Variables */
 /* Index */
 * {
@@ -19,11 +36,11 @@ a {
 }
 
 a:focus {
-  color: lightseagreen;
+  color: #07F6F9;
 }
 
 a:hover {
-  color: lightseagreen;
+  color: #07F6F9;
 }
 
 img {
@@ -31,7 +48,7 @@ img {
 }
 
 /* Botonera */
-.boton {
+.boton, .boton-activado {
   opacity: 0.5;
   display: inline-block;
   padding: 1em;
@@ -45,7 +62,7 @@ img {
   transition: all .2s ease-out;
 }
 
-.boton:hover {
+.boton:hover, .boton-activado:hover {
   opacity: 1;
   background-size: 100% 3px, auto;
 }

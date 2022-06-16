@@ -1,3 +1,27 @@
+/* SASS II (Extend) */
+
+.textoh3 {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: violet;
+}
+
+.test-sass{
+	@extend .textoh3;
+	text-decoration: line-through;
+}
+
+/* Mixin */
+
+@mixin mix1{
+	background-color: aliceblue;
+	font-size: larger;
+	color: aquamarine;
+}
+
+.cuerpo{
+	@include mix1;
+}
+
 /* SCSS - Variables */
 $color_white: white;
 $color_cyan: #07F6F9;
@@ -18,21 +42,26 @@ $font_size_P: 20px;
 	padding: 0;
 	box-sizing: border-box;
 }
+
 body {
 	background-color: #2D2D2D;
 	background-image: url("/img/background_image_4.jpg");
-	color: white;
+	color: $color_white;
 }
+
 a {
-	color: white;
+	color: $color_white;
 	font-weight: 600;
+
 	&:focus {
-		color: lightseagreen;
+		color: $color_cyan;
 	}
+
 	&:hover {
-		color: lightseagreen;
+		color: $color_cyan;
 	}
 }
+
 img {
 	width: 100%;
 }
@@ -48,12 +77,15 @@ img {
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	transition: all .2s ease-out;
+
 	&:hover {
 		opacity: 1;
 		background-size: 100% 3px, auto;
 	}
 }
+
 .boton-activado {
+	@extend .boton;
 	color: $color_cyan;
 }
 
@@ -64,6 +96,7 @@ img {
 .hamburguer-btn {
 	display: none;
 }
+
 .content {
 	overflow: hidden;
 	transition: max-height 0.5s ease-out;
@@ -79,6 +112,7 @@ header {
 	height: 80px;
 	z-index: 99;
 }
+
 header.grid-item {
 	height: 80px;
 }
@@ -90,12 +124,15 @@ header.grid-item {
 	justify-content: flex-start;
 	padding: 50px 200px;
 }
+
 h3 {
 	font-size: $font_size_h3;
 }
+
 h1 {
 	font-size: $font_size_h1;
 }
+
 p {
 	font-size: $font_size_P;
 }
@@ -108,10 +145,12 @@ footer {
 	justify-content: space-between;
 	border-top: 1px solid $color_white;
 }
+
 footer.grid-item {
 	height: 60px;
 	margin-bottom: 20px;
 }
+
 .footer-container {
 	display: flex;
 	flex-direction: column;
@@ -126,26 +165,32 @@ footer.grid-item {
 		background-color: #333;
 		margin: 0;
 	}
+
 	header.grid-item {
 		height: auto;
 	}
+
 	.row {
 		flex-direction: column;
 	}
+
 	.nav-container {
 		align-items: flex-start;
 		align-content: center;
 	}
+
 	.navBar {
 		height: auto;
 		width: 100%;
 		background-color: $color_black;
 		align-items: center;
 		align-content: center;
+
 		ul {
 			flex-direction: column;
 		}
 	}
+
 	.hamburguer-btn {
 		display: block;
 		height: 50px;
@@ -156,65 +201,80 @@ footer.grid-item {
 		border-radius: 5px;
 		border-color: #000;
 	}
+
 	.content {
 		max-height: 0px;
 	}
+
 	.grid-container {
 		padding: 0px;
 	}
+
 	.mainindex {
 		margin-top: 248px;
 		padding: 32px 24px;
 		width: 100vw;
 	}
+
 	.title {
 		display: flex;
 		flex-wrap: wrap;
 		margin-bottom: 24px;
 		flex-direction: column;
+
 		h1 {
 			font-size: $font_size_h1_mobile;
 		}
 	}
+
 	footer {
 		padding: 32px 0px;
 		flex-direction: column;
 		justify-content: center;
+
 		p {
 			margin-bottom: 16px;
 			text-align: center;
 		}
+
 		a {
 			margin-bottom: 16px;
 			text-align: center;
 		}
 	}
+
 	footer.grid-item {
 		height: auto;
 	}
+
 	.footer-container {
 		flex-direction: column;
 		margin-bottom: 16px;
 		justify-content: center;
 	}
+
 	.workgallery {
 		display: grid;
 		grid-template-columns: auto;
 		row-gap: 32px;
 	}
+
 	#works.mainindex {
 		padding: 32px;
 	}
+
 	#works {
 		h1 {
 			font-size: 48px;
 			margin-bottom: $font_size_h1_mobile;
 		}
 	}
+
 	.grid-item {
 		height: auto;
 		display: flex;
 	}
+
 	.title-container {
 		display: flex;
 		flex-direction: column;
@@ -223,25 +283,31 @@ footer.grid-item {
 		margin-top: 250px;
 		padding: 0px 12px;
 	}
+
 	.aboutgallery2 {
 		padding: 0;
 		align-self: flex-start;
 		padding: 15px 0px;
 		margin: 0;
 	}
+
 	.main-about {
 		.parrafo {
 			margin: 15px 0px;
 		}
 	}
+
 	.social-container {
 		margin: 20px 0px;
 	}
+
 	.work {
 		padding: 20px 0px;
 	}
+
 	.experience-list {
 		margin: 15px 0px;
+
 		li {
 			margin: 12px 0px;
 		}
@@ -253,6 +319,7 @@ footer.grid-item {
 	.grid-container {
 		padding: 0px;
 	}
+
 	header {
 		justify-content: center;
 		width: 100vw;
@@ -260,48 +327,59 @@ footer.grid-item {
 		background-color: #333;
 		margin: 0;
 	}
+
 	.mainindex {
 		margin-top: 100px;
 		padding: 48px 150px 100px 100px;
 		width: 100vw;
 	}
+
 	footer {
 		padding: 32px 0px;
 		flex-direction: column;
 		justify-content: center;
+
 		p {
 			margin-bottom: 16px;
 			text-align: center;
 		}
+
 		a {
 			margin-bottom: 16px;
 			text-align: center;
 		}
 	}
+
 	.footer-container {
 		flex-direction: column;
 		margin-bottom: 16px;
 		justify-content: center;
 	}
+
 	.workgallery {
 		display: grid;
 		grid-template-columns: auto;
 		row-gap: 32px;
 	}
+
 	#works.mainindex {
 		padding: 100px;
 	}
+
 	#works {
 		h1 {
 			font-size: $font_size_h1_mobile;
 			margin-bottom: 32px;
 		}
 	}
+
 	.grid-item {
 		height: auto;
 		display: flex;
 	}
+
 	.row {
 		flex-direction: column;
 	}
 }
+
