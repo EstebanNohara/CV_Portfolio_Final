@@ -1,0 +1,25 @@
+.workgallery {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	column-gap: 10px;
+}
+#works.mainindex {
+	padding: 100px;
+}
+#works {
+	h1 {
+		margin-bottom: 50px;
+	}
+}
+.work {
+	margin: 2% 1em;
+}
+.worktitulo {
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 5%;
+}
+.maincontact {
+	height: 60vh;
+	padding-left: 15%;
+}

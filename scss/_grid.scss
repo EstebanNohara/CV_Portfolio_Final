@@ -1,0 +1,31 @@
+/* Grid */
+.grid-container {
+	display: grid;
+	grid-template-areas: 'header' 'main' 'footer';
+	padding: 0 100px;
+	min-height: 100vh;
+	align-content: space-between;
+}
+.grid-item {
+	height: auto;
+	display: flex;
+}
+.row {
+	flex-direction: row;
+}
+.column {
+	flex-direction: column;
+}
+.red {
+	background-color: red;
+}
+.green {
+	background-color: green;
+}
+.blue {
+	background-color: blue;
+}
+.box {
+	background-color: #333;
+	height: 15px;
+}

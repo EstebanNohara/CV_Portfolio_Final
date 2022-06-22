@@ -1,0 +1,17 @@
+/* Contact */
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: 30%;
+	height: 60%;
+	font-size: larger;
+	margin-top: 10px;
+	label {
+		margin-top: 10px;
+	}
+	input {
+		margin-top: 10px;
+		font-size: medium;
+	}
+}
