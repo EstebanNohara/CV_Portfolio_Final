@@ -9,8 +9,11 @@
 
 body {
   background-color: #2D2D2D;
-  background-image: url("/img/background_image_4.jpg");
+  background-image: url("/img/background_image_4.jpg") no-repeat center fixed;
+  background-size: cover;
   color: white;
+  height: 100%;
+  width: auto;
 }
 
 a {
@@ -31,7 +34,7 @@ img {
 }
 
 /* Botonera */
-.boton, .boton-activado {
+.boton {
   opacity: 0.5;
   display: inline-block;
   padding: 1em;
@@ -45,13 +48,14 @@ img {
   transition: all .2s ease-out;
 }
 
-.boton:hover, .boton-activado:hover {
+.boton:hover {
   opacity: 1;
   background-size: 100% 3px, auto;
 }
 
 .boton-activado {
   color: #07F6F9;
+  font-weight: bold;
 }
 
 /* NavBar */
@@ -124,6 +128,148 @@ img {
   padding-left: 15%;
 }
 
+/* Contact */
+/* Contact */
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 30%;
+  height: 60%;
+  font-size: larger;
+  margin-top: 10px;
+}
+
+form label {
+  margin-top: 10px;
+}
+
+form input {
+  margin-top: 10px;
+  font-size: medium;
+}
+
+/* About */
+/* About */
+.main-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.aboutgallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.about-column {
+  padding-bottom: 1%;
+}
+
+.title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutgallery2 {
+  margin-left: 32px;
+}
+
+.aboutgallery2 .fa-solid {
+  font-size: 32px;
+  width: 50px;
+}
+
+/* Skills */
+/* Skills */
+.mainskill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: flex-star;
+      -ms-flex-pack: flex-star;
+          justify-content: flex-star;
+  padding-left: 15%;
+  padding-bottom: 5%;
+  height: 60vh;
+}
+
+/* Grid */
+/* Grid */
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header" "main" "footer";
+  padding: 0 100px;
+  min-height: 100vh;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.grid-item {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.box {
+  background-color: #333;
+  height: 15px;
+}
+
 /* Hamburger */
 .hamburguer-btn {
   display: none;
@@ -168,7 +314,7 @@ header.grid-item {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 50px 200px;
+  padding: 50px 200px 400px 300px;
 }
 
 h3 {
@@ -214,6 +360,23 @@ footer.grid-item {
           flex-direction: column;
 }
 
+/* Animaciones */
+.delay1 {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+.delay2 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.delay3 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+/* Query Mobile */
 /* Query Mobile */
 @media screen and (max-width: 800px) {
   header {

@@ -1,226 +1,229 @@
-
+/* Query Mobile */
 @media screen and (max-width:800px) {
-	header {
-		justify-content: flex-start;
-		width: 100vw;
-		position: fixed;
-		background-color: #333;
-		margin: 0;
+	
+		header {
+			justify-content: flex-start;
+			width: 100vw;
+			position: fixed;
+			background-color: #333;
+			margin: 0;
+		}
+
+		header.grid-item {
+			height: auto;
+		}
+
+		.row {
+			flex-direction: column;
+		}
+
+		.nav-container {
+			align-items: flex-start;
+			align-content: center;
+		}
+
+		.navBar {
+			height: auto;
+			width: 100%;
+			background-color: $color_black;
+			align-items: center;
+			align-content: center;
+
+			ul {
+				flex-direction: column;
+			}
+		}
+
+		.hamburguer-btn {
+			display: block;
+			height: 50px;
+			width: 50px;
+			font-size: $font_size_botonera;
+			background-color: #1d1d1d;
+			color: $color_white;
+			border-radius: 5px;
+			border-color: #000;
+		}
+
+		.content {
+			max-height: 0px;
+		}
+
+		.grid-container {
+			padding: 0px;
+		}
+
+		.mainindex {
+			margin-top: 248px;
+			padding: 32px 24px;
+			width: 100vw;
+		}
+
+		.title {
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 24px;
+			flex-direction: column;
+
+			h1 {
+				font-size: $font_size_h1_mobile;
+			}
+		}
+
+		footer {
+			padding: 32px 0px;
+			flex-direction: column;
+			justify-content: center;
+
+			p {
+				margin-bottom: 16px;
+				text-align: center;
+			}
+
+			a {
+				margin-bottom: 16px;
+				text-align: center;
+			}
+		}
+
+		footer.grid-item {
+			height: auto;
+		}
+
+		.footer-container {
+			flex-direction: column;
+			margin-bottom: 16px;
+			justify-content: center;
+		}
+
+		.workgallery {
+			display: grid;
+			grid-template-columns: auto;
+			row-gap: 32px;
+		}
+
+		#works.mainindex {
+			padding: 32px;
+		}
+
+		#works {
+			h1 {
+				font-size: 48px;
+				margin-bottom: $font_size_h1_mobile;
+			}
+		}
+
+		.grid-item {
+			height: auto;
+			display: flex;
+		}
+
+		.title-container {
+			display: flex;
+			flex-direction: column;
+			align-content: flex-start;
+			align-items: flex-start;
+			margin-top: 250px;
+			padding: 0px 12px;
+		}
+
+		.aboutgallery2 {
+			padding: 0;
+			align-self: flex-start;
+			padding: 15px 0px;
+			margin: 0;
+		}
+
+		.main-about {
+			.parrafo {
+				margin: 15px 0px;
+			}
+		}
+
+		.social-container {
+			margin: 20px 0px;
+		}
+
+		.work {
+			padding: 20px 0px;
+		}
+
+		.experience-list {
+			margin: 15px 0px;
+
+			li {
+				margin: 12px 0px;
+			}
+		}
 	}
 
-	header.grid-item {
-		height: auto;
-	}
 
-	.row {
-		flex-direction: column;
-	}
 
-	.nav-container {
-		align-items: flex-start;
-		align-content: center;
-	}
+	/* Query Tablet */
+	@media screen and (min-width:800px) and (max-width:1200px) {
+		.grid-container {
+			padding: 0px;
+		}
 
-	.navBar {
-		height: auto;
-		width: 100%;
-		background-color: $color_black;
-		align-items: center;
-		align-content: center;
+		header {
+			justify-content: center;
+			width: 100vw;
+			position: fixed;
+			background-color: #333;
+			margin: 0;
+		}
 
-		ul {
+		.mainindex {
+			margin-top: 100px;
+			padding: 48px 150px 100px 100px;
+			width: 100vw;
+		}
+
+		footer {
+			padding: 32px 0px;
+			flex-direction: column;
+			justify-content: center;
+
+			p {
+				margin-bottom: 16px;
+				text-align: center;
+			}
+
+			a {
+				margin-bottom: 16px;
+				text-align: center;
+			}
+		}
+
+		.footer-container {
+			flex-direction: column;
+			margin-bottom: 16px;
+			justify-content: center;
+		}
+
+		.workgallery {
+			display: grid;
+			grid-template-columns: auto;
+			row-gap: 32px;
+		}
+
+		#works.mainindex {
+			padding: 100px;
+		}
+
+		#works {
+			h1 {
+				font-size: $font_size_h1_mobile;
+				margin-bottom: 32px;
+			}
+		}
+
+		.grid-item {
+			height: auto;
+			display: flex;
+		}
+
+		.row {
 			flex-direction: column;
 		}
 	}
-
-	.hamburguer-btn {
-		display: block;
-		height: 50px;
-		width: 50px;
-		font-size: $font_size_botonera;
-		background-color: #1d1d1d;
-		color: $color_white;
-		border-radius: 5px;
-		border-color: #000;
-	}
-
-	.content {
-		max-height: 0px;
-	}
-
-	.grid-container {
-		padding: 0px;
-	}
-
-	.mainindex {
-		margin-top: 248px;
-		padding: 32px 24px;
-		width: 100vw;
-	}
-
-	.title {
-		display: flex;
-		flex-wrap: wrap;
-		margin-bottom: 24px;
-		flex-direction: column;
-
-		h1 {
-			font-size: $font_size_h1_mobile;
-		}
-	}
-
-	footer {
-		padding: 32px 0px;
-		flex-direction: column;
-		justify-content: center;
-
-		p {
-			margin-bottom: 16px;
-			text-align: center;
-		}
-
-		a {
-			margin-bottom: 16px;
-			text-align: center;
-		}
-	}
-
-	footer.grid-item {
-		height: auto;
-	}
-
-	.footer-container {
-		flex-direction: column;
-		margin-bottom: 16px;
-		justify-content: center;
-	}
-
-	.workgallery {
-		display: grid;
-		grid-template-columns: auto;
-		row-gap: 32px;
-	}
-
-	#works.mainindex {
-		padding: 32px;
-	}
-
-	#works {
-		h1 {
-			font-size: 48px;
-			margin-bottom: $font_size_h1_mobile;
-		}
-	}
-
-	.grid-item {
-		height: auto;
-		display: flex;
-	}
-
-	.title-container {
-		display: flex;
-		flex-direction: column;
-		align-content: flex-start;
-		align-items: flex-start;
-		margin-top: 250px;
-		padding: 0px 12px;
-	}
-
-	.aboutgallery2 {
-		padding: 0;
-		align-self: flex-start;
-		padding: 15px 0px;
-		margin: 0;
-	}
-
-	.main-about {
-		.parrafo {
-			margin: 15px 0px;
-		}
-	}
-
-	.social-container {
-		margin: 20px 0px;
-	}
-
-	.work {
-		padding: 20px 0px;
-	}
-
-	.experience-list {
-		margin: 15px 0px;
-
-		li {
-			margin: 12px 0px;
-		}
-	}
-}
-
-/* Query Tablet */
-@media screen and (min-width:800px) and (max-width:1200px) {
-	.grid-container {
-		padding: 0px;
-	}
-
-	header {
-		justify-content: center;
-		width: 100vw;
-		position: fixed;
-		background-color: #333;
-		margin: 0;
-	}
-
-	.mainindex {
-		margin-top: 100px;
-		padding: 48px 150px 100px 100px;
-		width: 100vw;
-	}
-
-	footer {
-		padding: 32px 0px;
-		flex-direction: column;
-		justify-content: center;
-
-		p {
-			margin-bottom: 16px;
-			text-align: center;
-		}
-
-		a {
-			margin-bottom: 16px;
-			text-align: center;
-		}
-	}
-
-	.footer-container {
-		flex-direction: column;
-		margin-bottom: 16px;
-		justify-content: center;
-	}
-
-	.workgallery {
-		display: grid;
-		grid-template-columns: auto;
-		row-gap: 32px;
-	}
-
-	#works.mainindex {
-		padding: 100px;
-	}
-
-	#works {
-		h1 {
-			font-size: $font_size_h1_mobile;
-			margin-bottom: 32px;
-		}
-	}
-
-	.grid-item {
-		height: auto;
-		display: flex;
-	}
-
-	.row {
-		flex-direction: column;
-	}
-}

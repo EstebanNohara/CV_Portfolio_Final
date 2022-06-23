@@ -21,8 +21,11 @@ $font_size_P: 20px;
 
 body {
 	background-color: #2D2D2D;
-	background-image: url("/img/background_image_4.jpg");
-	color: $color_white;
+	background-image: url("/img/background_image_4.jpg") no-repeat center fixed;
+	background-size: cover;
+	color: white;
+	height: 100%;
+	width: auto;
 }
 
 a {
@@ -66,22 +69,22 @@ img {
 }
 
 /* NavBar */
-@import "/scss/navbar";
+@import "./navbar";
 
 /* Work */
-@import "/scss/work";
+@import "./work";
 
 /* Contact */
-@import "/scss/contact";
+@import "./contact";
 
 /* About */
-@import "/scss/about";
+@import "./about";
 
 /* Skills */
-@import "/scss/skills";
+@import "./skills";
 
 /* Grid */
-@import "/scss/grid";
+@import "./grid";
 
 
 /* Hamburger */
@@ -162,4 +165,4 @@ footer.grid-item {
 }
 
 /* Query Mobile */
-@import "/scss/mediaquery";
+@import "./mediaquery";

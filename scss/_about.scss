@@ -4,22 +4,28 @@
 	flex-direction: column;
 	justify-content: flex-start;
 }
+
 .aboutgallery {
 	display: grid;
 	grid-template-columns: auto auto;
 	column-gap: 10px;
 }
+
 .about-column {
 	padding-bottom: 1%;
 }
+
 .title-container {
 	display: flex;
 	align-items: center;
 }
+
 .aboutgallery2 {
 	margin-left: 32px;
+
 	.fa-solid {
 		font-size: 32px;
 		width: 50px;
 	}
 }
+
