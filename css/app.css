@@ -225,7 +225,6 @@ form input {
 .grid-container {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "footer";
   padding: 0 100px;
   min-height: 100vh;
   -ms-flex-line-pack: justify;
